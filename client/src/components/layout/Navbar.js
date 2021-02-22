@@ -21,8 +21,9 @@ const Navbar = ({ title, icon }) => {
       <li>Hello {user && user.name}</li>
       <li>
         <a onClick={onLogout} href='#!'>
-          <i className='fas fa-sign-out-alt'></i>
-          <span className='hide-sm'>Logout</span>
+          <i className='fas fa-power-off'></i>
+
+          <span className='hide-sm'> Logout</span>
         </a>
       </li>
     </Fragment>
@@ -48,8 +49,9 @@ const Navbar = ({ title, icon }) => {
 };
 
 Navbar.defaultProps = {
-  icon: 'fas fa-id-card-alt',
-  title: 'Contact Keeper',
+  //icon: 'fas fa-id-card-alt',
+  title: 'Contact Book',
+  icon: 'fas fa-address-book',
 };
 
 Navbar.propTypes = {
